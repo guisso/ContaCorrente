@@ -70,13 +70,18 @@ public class ContaCorrente {
         saldo += valor;
         return saldo;
     }
-    
+
     public Float sacar(Float valor) {
         saldo -= valor;
         return saldo;
     }
+
+    @Override
+    public String toString() {
+        return "ContaCorrente{"
+                + "agencia=" + agencia
+                + ", conta=" + conta
+                + ", saldo=" + saldo
+                + '}';
+    }
 }
-
-
-
-
